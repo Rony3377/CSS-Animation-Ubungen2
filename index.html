@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    .box1 {
+      border: blue solid 1px;
+      width: 200px;
+      height: 120px;
+      overflow: auto;
+      animation-name: lo;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      background-color: burlywood;
+    }
+    @keyframes lo {
+      0% {
+        transform: rotate(0) translateX(0);
+        background-color: chocolate;
+      }
+      50% {
+        background-color: rgb(90, 65, 47);
+      }
+
+      100% {
+        transform: rotate(360deg) translateX(500px);
+        background-color: darkorange;
+      }
+    }
+
+    .box2 {
+      border: rgb(6, 6, 39) solid 1px;
+      width: 200px;
+      height: 400px;
+      overflow: hidden;
+      padding-top: 100px;
+      animation-name: lore;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+    @keyframes lore {
+      0% {
+        transform: scale(0.5);
+        padding: 1px;
+        height: 1px;
+        background-color: hotpink;
+      }
+      50% {
+        transform: scale(1);
+        padding: 20px;
+        height: 250px;
+        background-color: rgb(122, 34, 78);
+      }
+
+      100% {
+        transform: scale(1.5);
+        padding: 40px;
+        height: 400px;
+        background-color: rgb(34, 7, 21);
+      }
+    }
+  </style>
+  <body>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ad
+      voluptates iure nihil qui nesciunt libero aut doloremque a unde non ex
+      quidem, facilis aliquam tempore, vero ab odit natus!
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit amet quae
+      beatae illum incidunt dolor vel? Explicabo dolore laborum minima expedita,
+      consectetur vitae quibusdam non? Laboriosam, magni harum. Minus, porro.
+    </div>
+  </body>
+</html>
